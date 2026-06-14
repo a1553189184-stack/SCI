@@ -6,6 +6,7 @@ This plan defines how to turn the GitHub repository into a stronger reviewer-fac
 
 - GitHub repository: `https://github.com/a1553189184-stack/SCI`
 - Current public-subset package commit: see `git log --oneline`
+- Fixed GitHub Release: `https://github.com/a1553189184-stack/SCI/releases/tag/v1.0-reviewer-package`
 - Git-tracked files: code, configs, derived metadata, splits, predictions, metrics, figures, final manuscript files, logs, and environment reports
 - Not tracked in normal Git: raw images, virtual environment files, large zip archives, and model checkpoint `.pt` files
 

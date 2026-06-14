@@ -98,6 +98,14 @@ Main figure TIFF exports are in:
 
 - `figures_large/final15_tiff_300dpi/`
 
+## Fixed Reviewer Release
+
+The fixed reviewer package release is:
+
+- `v1.0-reviewer-package`: https://github.com/a1553189184-stack/SCI/releases/tag/v1.0-reviewer-package
+
+The release includes the source/result archive, checkpoint archive, checkpoint manifest, release asset manifest, and SHA256 checksum file.
+
 ## Large Files Not Tracked
 
 Raw image files, virtual environments, model checkpoint files, and large zip archives are intentionally omitted from this GitHub-safe repository.

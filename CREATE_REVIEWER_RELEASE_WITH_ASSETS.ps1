@@ -28,10 +28,22 @@ if ($SourceZip -and -not (Test-Path $SourceZip)) {
     throw "Source archive not found: $SourceZip"
 }
 
-try {
-    gh auth status
-} catch {
-    gh auth login --hostname github.com --git-protocol https --web
+$didSetTemporaryToken = $false
+if (-not $env:GH_TOKEN) {
+    $credentialInput = "protocol=https`nhost=github.com`n`n"
+    $credentialOutput = $credentialInput | git credential fill
+    $credentialToken = $null
+    foreach ($line in $credentialOutput) {
+        if ($line -like "password=*") {
+            $credentialToken = $line.Substring(9)
+        }
+    }
+    if ($credentialToken) {
+        $env:GH_TOKEN = $credentialToken
+        $didSetTemporaryToken = $true
+    } else {
+        gh auth login --hostname github.com --git-protocol https --web --clipboard
+    }
 }
 
 $releaseExists = $true
@@ -63,3 +75,7 @@ if ($SourceZip) {
 gh release upload $Tag $assetFiles --repo $Repository --clobber
 
 Write-Host "Release ready: https://github.com/$Repository/releases/tag/$Tag"
+
+if ($didSetTemporaryToken) {
+    $env:GH_TOKEN = $null
+}
