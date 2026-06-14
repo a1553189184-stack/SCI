@@ -9,7 +9,10 @@ This file documents the DOI step for the reviewer package.
 - Checkpoint archive prepared locally as: `<DESKTOP>/CXR_model_checkpoints_v1.0-reviewer-package.zip`
 - Source/result archive prepared locally as: `<DESKTOP>/CXR_reviewer_source_package_v1.0-reviewer-package.zip`
 - Checkpoint archive SHA256: see `release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv`
-- DOI status: pending. Do not cite a DOI until Zenodo or another DOI repository has issued one.
+- DOI: `10.5281/zenodo.20688290`
+- DOI URL: `https://doi.org/10.5281/zenodo.20688290`
+- Concept DOI: `10.5281/zenodo.20688289`
+- Archived file: `a1553189184-stack/SCI-v1.0-reviewer-package.zip`
 
 ## Route A: Zenodo GitHub Integration
 

@@ -68,6 +68,7 @@ Edema and Pneumonia had zero positive cases in the selected external subset and 
 - `DATA_AND_CODE_AVAILABILITY.md`: provides submission-ready availability wording.
 - `RELEASE_AND_CHECKPOINT_PLAN.md`: describes the checkpoint and DOI/release plan.
 - `ZENODO_DOI_INSTRUCTIONS.md`: describes the Zenodo DOI workflow.
+- `ZENODO_RECORD_SUMMARY.md`: records the issued Zenodo DOI and archive contents.
 - `ZENODO_METADATA_TEMPLATE.json`: provides metadata fields for a DOI-linked record.
 - `.zenodo.json`: provides release metadata for Zenodo's GitHub integration.
 - `CITATION.cff`: provides a GitHub citation metadata file.
@@ -105,8 +106,9 @@ Main figure TIFF exports are in:
 The fixed reviewer package release is:
 
 - `v1.0-reviewer-package`: https://github.com/a1553189184-stack/SCI/releases/tag/v1.0-reviewer-package
+- Zenodo DOI: https://doi.org/10.5281/zenodo.20688290
 
-The release includes the source/result archive, checkpoint archive, checkpoint manifest, release asset manifest, and SHA256 checksum file.
+Zenodo archived the GitHub source snapshot. The GitHub Release includes the source/result archive, checkpoint archive, checkpoint manifest, release asset manifest, and SHA256 checksum file.
 
 ## Large Files Not Tracked
 

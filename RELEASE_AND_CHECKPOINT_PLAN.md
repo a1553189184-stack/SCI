@@ -7,6 +7,8 @@ This plan defines how to turn the GitHub repository into a stronger reviewer-fac
 - GitHub repository: `https://github.com/a1553189184-stack/SCI`
 - Current public-subset package commit: see `git log --oneline`
 - Fixed GitHub Release: `https://github.com/a1553189184-stack/SCI/releases/tag/v1.0-reviewer-package`
+- Zenodo DOI: `https://doi.org/10.5281/zenodo.20688290`
+- Zenodo concept DOI: `https://doi.org/10.5281/zenodo.20688289`
 - Git-tracked files: code, configs, derived metadata, splits, predictions, metrics, figures, final manuscript files, logs, and environment reports
 - Not tracked in normal Git: raw images, virtual environment files, large zip archives, and model checkpoint `.pt` files
 
@@ -92,8 +94,8 @@ powershell -ExecutionPolicy Bypass -File .\CREATE_REVIEWER_RELEASE_WITH_ASSETS.p
 GitHub URLs are useful but are not a substitute for a persistent scholarly identifier. Before final submission, create an archival record through Zenodo, OSF, Figshare, Dryad, or an institutional repository and record the DOI here:
 
 ```text
-Repository DOI: pending
-Checkpoint DOI or release asset URL: pending
+Repository DOI: 10.5281/zenodo.20688290
+Checkpoint release asset URL: https://github.com/a1553189184-stack/SCI/releases/tag/v1.0-reviewer-package
 ```
 
 Do not invent a DOI in the manuscript. Use `pending` until the archive record exists and resolves.
