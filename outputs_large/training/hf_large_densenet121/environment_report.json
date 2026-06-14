@@ -1,0 +1,11 @@
+﻿{
+  "timestamp": "2026-06-14T01:56:45",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "torch_cuda": "12.8",
+  "cuda_device_count": 1,
+  "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU"
+}
+

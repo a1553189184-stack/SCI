@@ -1,0 +1,8 @@
+﻿split,n_patients,n_images
+calibration,379,751
+internal_test,379,739
+train,2657,2679
+validation,380,831
+VinDr-derived external,1000,1000
+
+

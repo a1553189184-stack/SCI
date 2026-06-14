@@ -1,0 +1,223 @@
+﻿project:
+  name: cxr_nih_to_vindr
+  root: <PROJECT_ROOT>
+  seed: 20260614
+paths:
+  label_map: configs/label_map.yaml
+  metadata_dir: metadata_large
+  tables_dir: tables_large
+  splits_dir: splits_large
+  logs_dir: logs
+nih:
+  metadata_csv: data/nih_chestxray14/Data_Entry_2017.csv
+  image_root: data/nih_chestxray14
+  output_csv: metadata_large/hf_large_nih_clean_metadata.csv
+  table1_csv: tables/table1_nih_characteristics.csv
+  prevalence_csv: tables/nih_label_prevalence.csv
+  verify_image_paths: true
+  filter_frontal: true
+  allowed_views:
+  - PA
+  - AP
+  columns:
+    image_id:
+    - Image Index
+    - image_id
+    - ImageID
+    - image
+    patient_id:
+    - Patient ID
+    - patient_id
+    - patient
+    - subject_id
+    labels:
+    - Finding Labels
+    - labels
+    - findings
+    - label
+    view_position:
+    - View Position
+    - view_position
+    - ViewPosition
+    - view
+    age:
+    - Patient Age
+    - age
+    - Age
+    sex:
+    - Patient Gender
+    - Patient Sex
+    - sex
+    - gender
+vindr:
+  labels_csv: data/vindr_cxr/annotations_train.csv
+  metadata_csv: null
+  boxes_csv: data/vindr_cxr/annotations_train.csv
+  image_root: data/vindr_cxr
+  output_csv: metadata_large/hf_large_vindr_clean_metadata.csv
+  boxes_output_csv: metadata_large/hf_large_vindr_boxes_clean.csv
+  table1_csv: tables/table1_vindr_characteristics.csv
+  prevalence_csv: tables/vindr_label_prevalence.csv
+  verify_image_paths: true
+  filter_frontal: false
+  allowed_views:
+  - PA
+  - AP
+  - frontal
+  - Frontal
+  columns:
+    image_id:
+    - image_id
+    - ImageID
+    - image
+    - image_id_png
+    patient_id:
+    - patient_id
+    - Patient ID
+    - subject_id
+    study_id:
+    - study_id
+    - Study ID
+    - study
+    labels:
+    - class_name
+    - label
+    - Finding Labels
+    - finding
+    - disease
+    view_position:
+    - view_position
+    - View Position
+    - view
+    age:
+    - age
+    - Patient Age
+    - Age
+    sex:
+    - sex
+    - Patient Sex
+    - gender
+    box_x_min:
+    - x_min
+    - xmin
+    - x1
+    box_y_min:
+    - y_min
+    - ymin
+    - y1
+    box_x_max:
+    - x_max
+    - xmax
+    - x2
+    box_y_max:
+    - y_max
+    - ymax
+    - y2
+splits:
+  input_csv: metadata_large/hf_large_nih_clean_metadata.csv
+  output_prefix: splits_large/hf_large_nih
+  strategy: greedy_multilabel
+  ratios:
+    train: 0.7
+    validation: 0.1
+    calibration: 0.1
+    internal_test: 0.1
+  patient_col: patient_id
+  image_col: image_id
+  split_stats_csv: splits_large/hf_large_nih_split_statistics.csv
+  split_summary_csv: tables_large/table1_nih_split_summary.csv
+labels:
+  include_sensitivity_labels: true
+  positive_value: 1
+  negative_value: 0
+  missing_value: 0
+image:
+  size: 224
+  channels: 3
+  imagenet_mean:
+  - 0.485
+  - 0.456
+  - 0.406
+  imagenet_std:
+  - 0.229
+  - 0.224
+  - 0.225
+  train_augmentation:
+    random_horizontal_flip: true
+    horizontal_flip_p: 0.5
+    random_rotation_degrees: 7
+  photometric_correction: true
+  dicom_percentile_clip:
+  - 1.0
+  - 99.0
+dataloader:
+  num_workers: 2
+  pin_memory: true
+  persistent_workers: true
+  train_batch_size: 24
+  eval_batch_size: 48
+model:
+  name: efficientnet_b0
+  pretrained: true
+  dropout: 0.0
+  freeze_backbone_epochs: 0
+training:
+  run_name: hf_large_efficientnet_b0
+  output_dir: outputs_large/training/hf_large_efficientnet_b0
+  checkpoint_dir: models_large/hf_large_efficientnet_b0
+  log_csv: logs_large/hf_large_efficientnet_b0_train_log.csv
+  epochs: 5
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  early_stopping_patience: 3
+  min_delta: 0.0001
+  amp: true
+  gradient_clip_norm: 1.0
+  save_every_epoch: false
+  monitor: val_macro_auprc
+smoke_test:
+  output_dir: outputs/smoke_train_100
+  checkpoint_dir: models/smoke_train_100
+  log_csv: logs/smoke_train_100_train_log.csv
+  max_train_images: 100
+  max_validation_images: 100
+  max_vindr_images: 100
+  epochs: 1
+  train_batch_size: 8
+  eval_batch_size: 8
+  num_workers: 0
+evaluation:
+  checkpoint_path: models_large/hf_large_efficientnet_b0/best_efficientnet_b0.pt
+  output_dir: outputs/evaluation/densenet121_nih_224
+  validation_predictions_csv: predictions_large/efficientnet_b0_nih_validation_predictions.csv
+  internal_predictions_csv: predictions_large/efficientnet_b0_internal_test_predictions.csv
+  internal_metrics_csv: tables_large/efficientnet_b0_internal_metrics.csv
+  thresholds_csv: tables_large/efficientnet_b0_thresholds_from_val.csv
+  bootstrap_ci_csv: tables_large/efficientnet_b0_bootstrap_ci.csv
+  external_predictions_csv: predictions_large/efficientnet_b0_external_vindr_predictions.csv
+  external_metrics_csv: tables_large/efficientnet_b0_external_metrics.csv
+  internal_external_comparison_csv: tables_large/efficientnet_b0_internal_external_comparison.csv
+  performance_drop_csv: tables_large/efficientnet_b0_performance_drop.csv
+  threshold_metric: f1
+  bootstrap_iterations: 500
+  bootstrap_seed: 20260613
+calibration:
+  output_dir: outputs_large/calibration/hf_large_efficientnet_b0
+  raw_calibration_predictions_csv: predictions_large/efficientnet_b0_nih_calibration_predictions.csv
+  raw_internal_predictions_csv: predictions_large/efficientnet_b0_internal_test_predictions.csv
+  raw_external_predictions_csv: predictions_large/efficientnet_b0_external_vindr_predictions.csv
+  calibrated_predictions_csv: outputs_large/calibration/hf_large_efficientnet_b0/calibrated_predictions.csv
+  calibration_metrics_csv: tables_large/efficientnet_b0_calibration_metrics.csv
+  curves_dir: figures_large/calibration/hf_large_efficientnet_b0
+  n_bins: 10
+gradcam:
+  output_dir: figures_large/gradcam/hf_large_efficientnet_b0
+  case_index_csv: tables_large/efficientnet_b0_gradcam_case_index.csv
+  localization_metrics_csv: tables_large/efficientnet_b0_gradcam_localization_metrics.csv
+  internal_predictions_csv: predictions_large/efficientnet_b0_internal_test_predictions.csv
+  external_predictions_csv: predictions_large/efficientnet_b0_external_vindr_predictions.csv
+  max_cases_per_label: 1
+  heatmap_quantile: 0.8
+_config_path: <PROJECT_ROOT>\configs\hf_large_efficientnet_b0.yaml
+
+

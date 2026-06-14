@@ -1,0 +1,27 @@
+﻿parameter,value
+image_size,224 x 224
+architecture_main,DenseNet121
+architecture_comparators,ResNet50; EfficientNet-B0
+pretraining,ImageNet pretrained torchvision weights
+loss,BCEWithLogitsLoss with positive class weights
+optimizer,AdamW
+learning_rate,0.0001
+weight_decay,0.0001
+epochs,5
+early_stopping_patience,3
+monitor,validation macro AUPRC
+train_batch_size,24
+eval_batch_size,48
+augmentation,horizontal flip p=0.5; random rotation +/-7 degrees
+mixed_precision,enabled when CUDA available
+threshold_selection,per-label F1 maximization on NIH validation split only
+calibration_fit,NIH calibration split only
+bootstrap_iterations,500 patient-level resamples
+random_seed,20260614
+python,"3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+torch,2.11.0+cu128
+cuda_available,True
+torch_cuda,12.8
+gpu,NVIDIA GeForce RTX 5060 Laptop GPU
+
+

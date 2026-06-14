@@ -1,0 +1,33 @@
+﻿{
+  "CXR_Manuscript_SCI_Submission_Final_12.docx": {
+    "path": "<DESKTOP>\\CXR_Manuscript_SCI_Submission_Final_12.docx",
+    "size_bytes": 928229,
+    "zip_integrity_error": null,
+    "paragraph_count": 144,
+    "table_count": 6,
+    "inline_shape_count": 6,
+    "embedded_media_count": 6,
+    "banned_positive_phrases_found": [],
+    "contains_negative_clinical_readiness_disclaimer": true,
+    "contains_external_identifier_bootstrap": true,
+    "contains_repository_placeholder": true,
+    "contains_gradcam_qualitative_only": true,
+    "contains_zero_external_positive_statement": true
+  },
+  "CXR_12_PreSubmission_Revision_Report.docx": {
+    "path": "<DESKTOP>\\CXR_12_PreSubmission_Revision_Report.docx",
+    "size_bytes": 49542,
+    "zip_integrity_error": null,
+    "paragraph_count": 135,
+    "table_count": 5,
+    "inline_shape_count": 0,
+    "embedded_media_count": 0,
+    "banned_positive_phrases_found": [],
+    "contains_negative_clinical_readiness_disclaimer": true,
+    "contains_external_identifier_bootstrap": true,
+    "contains_repository_placeholder": true,
+    "contains_gradcam_qualitative_only": true,
+    "contains_zero_external_positive_statement": true
+  }
+}
+

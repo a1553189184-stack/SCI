@@ -1,0 +1,8 @@
+﻿Render attempt for CXR_Manuscript_SCI_Submission_Final_15.docx
+Renderer: Documents skill render_docx.py via soffice
+Date: 2026-06-14
+Result: failed before PDF creation
+Error: libpng error: Write Error
+Interpretation: this matches prior environment-level LibreOffice failure on this machine. DOCX structural QA passed: zip integrity OK, no banned positive overclaiming phrases, expected tables/images embedded.
+
+

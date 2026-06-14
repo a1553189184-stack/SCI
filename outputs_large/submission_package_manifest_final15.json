@@ -1,0 +1,31 @@
+﻿{
+  "created_from": "15.docx final submission package request",
+  "docx_outputs": [
+    "<DESKTOP>\\CXR_Manuscript_SCI_Submission_Final_15.docx",
+    "<DESKTOP>\\CXR_Final_Submission_Package_15.docx",
+    "<DESKTOP>\\CXR_Cover_Letter_Final_15.docx",
+    "<DESKTOP>\\CXR_Supplementary_Materials_Organization_Final_15.docx"
+  ],
+  "main_tables": {
+    "table1_dataset_characteristics_main_final15.csv": "<PROJECT_ROOT>\\tables_large\\table1_dataset_characteristics_main_final15.csv",
+    "table2_external_evaluable_labels_main_final15.csv": "<PROJECT_ROOT>\\tables_large\\table2_external_evaluable_labels_main_final15.csv",
+    "table3_densenet121_main_performance_final15.csv": "<PROJECT_ROOT>\\tables_large\\table3_densenet121_main_performance_final15.csv",
+    "table4_architecture_macro_main_final15.csv": "<PROJECT_ROOT>\\tables_large\\table4_architecture_macro_main_final15.csv",
+    "table5_calibration_transfer_main_final15.csv": "<PROJECT_ROOT>\\tables_large\\table5_calibration_transfer_main_final15.csv",
+    "supplementary_table_descriptive_subgroup_final15.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table_descriptive_subgroup_final15.csv"
+  },
+  "figure_quality_csv": "<PROJECT_ROOT>\\tables_large\\figure_quality_and_exports_final15.csv",
+  "figure_tiffs": [
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\figure1_study_workflow_three_models.tiff",
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\figure2_densenet121_internal_external_ci.tiff",
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\figure3_prevalence_auprc_baseline_lift.tiff",
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\figure4_calibration_curves_upgraded.tiff",
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\figure5_gradcam_failure_modes_upgraded.tiff",
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\figure6_internal_minus_external_auroc.tiff",
+    "<PROJECT_ROOT>\\figures_large\\final15_tiff_300dpi\\graphical_abstract_plan_final15.tiff"
+  ],
+  "graphical_abstract": "<PROJECT_ROOT>\\figures_large\\graphical_abstract_plan_final15.png",
+  "risk_table_csv": "<PROJECT_ROOT>\\tables_large\\pre_submission_risk_table_final15.csv",
+  "checklist_csv": "<PROJECT_ROOT>\\tables_large\\final_submission_checklist_final15.csv"
+}
+

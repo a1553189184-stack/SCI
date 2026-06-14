@@ -1,0 +1,11 @@
+﻿harmonized_label,nih_label_source,vindr_label_source,analysis_role,nih_coding,vindr_coding,external_positives_in_analyzed_subset,external_evaluable_for_auc_pr,caution
+Atelectasis,Atelectasis,Atelectasis,primary; external-evaluable,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",131,True,
+Cardiomegaly,Cardiomegaly,Cardiomegaly,primary; external-evaluable,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",276,True,
+Pleural Effusion,Pleural Effusion,Pleural Effusion,primary; external-evaluable,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",288,True,
+Pneumothorax,Pneumothorax,Pneumothorax,primary; external-evaluable,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",59,True,
+Consolidation,Consolidation,Consolidation,primary; external-evaluable,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",175,True,
+Edema,Edema,not present as positive finding in analyzed cached subset,primary internally; external unevaluable in cached subset,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",0,False,AUROC/AUPRC are NA when the external subset has no positive cases
+Pneumonia,Pneumonia,not present as positive finding in analyzed cached subset,sensitivity internally; external unevaluable in cached subset,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",0,False,AUROC/AUPRC are NA when the external subset has no positive cases
+No Finding,No Finding,No Finding,sensitivity/reference label; external-evaluable,"1 positive, 0 negative/missing","1 positive, 0 negative/missing",414,True,
+
+

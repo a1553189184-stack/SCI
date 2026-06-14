@@ -1,0 +1,13 @@
+﻿original_expression,risk,recommended_replacement
+proved,Implies certainty beyond retrospective public-subset evidence.,suggested within the evaluated subset
+robust,Can imply broad transportability.,consistent within this selected subset
+superior,Implies confirmatory comparative testing.,numerically higher or descriptively higher
+clinical utility,Implies patient-care usefulness.,relevance for model evaluation
+deployment-ready,Implies clinical readiness.,not evaluated for prospective clinical deployment
+radiologist-level,Implies benchmark against clinical readers.,not compared with radiologists in this study
+explainability proved reasoning,Overstates saliency maps.,saliency maps supported qualitative failure-mode inspection
+calibration improved reliability,Suggests uniform improvement.,calibration effects were method-dependent
+external generalization was better,Ignores prevalence and selected subset composition.,external metrics were numerically higher in this selected public subset
+full VinDr validation,Misstates analyzed data scope.,selected VinDr-derived public external subset
+
+

@@ -1,0 +1,104 @@
+﻿{
+  "dataset": {
+    "nih_images": 5000,
+    "nih_patients": 3795,
+    "external_images": 1000,
+    "external_patients": 1000,
+    "split_images": [
+      {
+        "split": "calibration",
+        "n_patients": 379,
+        "n_images": 751
+      },
+      {
+        "split": "internal_test",
+        "n_patients": 379,
+        "n_images": 739
+      },
+      {
+        "split": "train",
+        "n_patients": 2657,
+        "n_images": 2679
+      },
+      {
+        "split": "validation",
+        "n_patients": 380,
+        "n_images": 831
+      },
+      {
+        "split": "VinDr-derived external",
+        "n_patients": 1000,
+        "n_images": 1000
+      }
+    ],
+    "external_note": "VinDr-CXR/VinBigData-derived public PNG cached subset; Edema and Pneumonia unavailable externally."
+  },
+  "training": {
+    "epochs_completed": 5,
+    "best_val_macro_auprc": "0.277",
+    "best_epoch": 2
+  },
+  "performance": {
+    "internal_macro_auroc": "0.680",
+    "internal_macro_auprc": "0.214",
+    "external_macro_auroc": "0.743",
+    "external_macro_auprc": "0.434",
+    "macro_auroc_absolute_drop": "-0.062",
+    "macro_auroc_relative_drop": "-0.092"
+  },
+  "calibration": {
+    "internal_uncalibrated_macro_brier": "0.193",
+    "internal_uncalibrated_macro_ece": "0.269",
+    "internal_uncalibrated_macro_mce": "0.539",
+    "internal_uncalibrated_macro_slope": "0.633",
+    "internal_uncalibrated_macro_intercept": "-2.285",
+    "internal_temperature_macro_ece": "0.280",
+    "external_temperature_macro_ece": "0.214"
+  },
+  "gradcam": {
+    "n_cases": 60,
+    "case_counts": {
+      "('NIH_internal_test', 'false_negative')": 8,
+      "('NIH_internal_test', 'false_positive')": 8,
+      "('NIH_internal_test', 'true_negative')": 8,
+      "('NIH_internal_test', 'true_positive')": 8,
+      "('VinDr_external', 'false_negative')": 6,
+      "('VinDr_external', 'false_positive')": 8,
+      "('VinDr_external', 'true_negative')": 8,
+      "('VinDr_external', 'true_positive')": 6
+    }
+  },
+  "model_comparison": [
+    {
+      "model": "DenseNet121",
+      "internal_macro_auroc": 0.6802725155959937,
+      "internal_macro_auprc": 0.2135116532463062,
+      "external_macro_auroc": 0.7425450139696842,
+      "external_macro_auprc": 0.434329948062806,
+      "macro_auroc_absolute_drop": -0.0622724983736905,
+      "macro_auroc_relative_drop": -0.0915405178748592,
+      "macro_auprc_absolute_drop": -0.2208182948164998
+    },
+    {
+      "model": "ResNet50",
+      "internal_macro_auroc": 0.6468712787865611,
+      "internal_macro_auprc": 0.20040162405265,
+      "external_macro_auroc": 0.7280063424628321,
+      "external_macro_auprc": 0.4183532881231555,
+      "macro_auroc_absolute_drop": -0.0811350636762709,
+      "macro_auroc_relative_drop": -0.1254269069241547,
+      "macro_auprc_absolute_drop": -0.2179516640705054
+    },
+    {
+      "model": "EfficientNet-B0",
+      "internal_macro_auroc": 0.6561939160993226,
+      "internal_macro_auprc": 0.2175701518885714,
+      "external_macro_auroc": 0.6564379999391328,
+      "external_macro_auprc": 0.3704296989080384,
+      "macro_auroc_absolute_drop": -0.0002440838398101,
+      "macro_auroc_relative_drop": -0.0003719690686269,
+      "macro_auprc_absolute_drop": -0.152859547019467
+    }
+  ]
+}
+

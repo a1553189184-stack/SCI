@@ -1,0 +1,4 @@
+﻿analysis,status,result_reporting,rationale
+MedMNIST pipeline verification,not run in the final CXR upgrade,no MedMNIST performance is reported as evidence for the manuscript,the final analysis uses real NIH ChestX-ray14 and VinDr-derived CXR predictions only
+
+

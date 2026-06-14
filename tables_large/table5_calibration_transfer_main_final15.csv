@@ -1,0 +1,11 @@
+﻿dataset,method,Brier,ECE,MCE,slope,intercept,interpretation
+NIH_internal_test,uncalibrated,0.1927348903367607,0.2686558016391955,0.5390127294291894,0.6326829996937289,-2.284596366528066,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+NIH_internal_test,temperature,0.1890505498663266,0.2804907363101536,0.5560737870201593,0.8210794926123764,-2.286098054632905,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+NIH_internal_test,platt,0.0792489248110047,0.028339350221024,0.2692466550009808,1.1506621543931543,0.3891361610729935,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+NIH_internal_test,isotonic,0.0809379257186769,0.0306980842912292,0.2863105246956755,0.4054427543256855,-1.388711363794361,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+VinDr_external,uncalibrated,0.1572061744689191,0.1969787290238891,0.483661272424516,1.1283808496927363,-1.657996590541862,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+VinDr_external,temperature,0.1589544314682005,0.2139388287719269,0.4517674872390002,1.4661646208819363,-1.6569544138696592,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+VinDr_external,platt,0.1196732813511857,0.0985276260419639,0.2364481265824119,2.436100536208502,3.956618473972084,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+VinDr_external,isotonic,0.1194004752042578,0.0953121097177546,0.3215213809011544,1.1585241407129463,0.5476812959422029,"NIH-fitted method evaluated for transfer; interpret with Brier, ECE, MCE, slope, intercept, and prevalence"
+
+

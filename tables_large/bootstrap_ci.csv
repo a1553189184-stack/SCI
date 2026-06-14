@@ -1,0 +1,83 @@
+﻿dataset,average,label,metric,ci_lower,ci_upper,n_bootstrap
+NIH_internal_test,label,Atelectasis,auroc,0.6155509470782798,0.743115633543906,500
+NIH_internal_test,label,Atelectasis,auprc,0.1687366450526628,0.3063960831976323,500
+NIH_internal_test,label,Atelectasis,sensitivity,0.16860362799512463,0.3602718566573943,500
+NIH_internal_test,label,Atelectasis,specificity,0.8532335844645048,0.9117069125011948,500
+NIH_internal_test,label,Atelectasis,f1,0.1657115302886649,0.3315227346589044,500
+NIH_internal_test,label,Atelectasis,accuracy,0.7739909537892442,0.8398265971316807,500
+NIH_internal_test,label,Atelectasis,ppv,0.1522722567287769,0.3217916041978978,500
+NIH_internal_test,label,Atelectasis,npv,0.867700789634411,0.920730505386902,500
+NIH_internal_test,label,Cardiomegaly,auroc,0.5595691494437537,0.7713017513376222,500
+NIH_internal_test,label,Cardiomegaly,auprc,0.0432073272278304,0.24043802714998572,500
+NIH_internal_test,label,Cardiomegaly,sensitivity,0.09518649193548086,0.3820954907161585,500
+NIH_internal_test,label,Cardiomegaly,specificity,0.9363488879948264,0.9678275939177088,500
+NIH_internal_test,label,Cardiomegaly,f1,0.0727272727272714,0.2903225806451566,500
+NIH_internal_test,label,Cardiomegaly,accuracy,0.9062621871796638,0.9454819517945919,500
+NIH_internal_test,label,Cardiomegaly,ppv,0.05630952380952223,0.26256265664159734,500
+NIH_internal_test,label,Cardiomegaly,npv,0.957110668301654,0.9834840848806352,500
+NIH_internal_test,label,Consolidation,auroc,0.5324203519242161,0.6945842787879958,500
+NIH_internal_test,label,Consolidation,auprc,0.053476415756475625,0.12715600199422458,500
+NIH_internal_test,label,Consolidation,sensitivity,0.38191489361701264,0.6931935817805225,500
+NIH_internal_test,label,Consolidation,specificity,0.639622647354008,0.7288409090909079,500
+NIH_internal_test,label,Consolidation,f1,0.09855292450920829,0.21435953648606249,500
+NIH_internal_test,label,Consolidation,accuracy,0.6337776632377768,0.7209147395544527,500
+NIH_internal_test,label,Consolidation,ppv,0.05603448275862045,0.13070652173912992,500
+NIH_internal_test,label,Consolidation,npv,0.9436588537998495,0.9767094411909977,500
+NIH_internal_test,label,Edema,auroc,0.6891500474833808,0.8778030426939477,500
+NIH_internal_test,label,Edema,auprc,0.027732448730222303,0.12219649328759384,500
+NIH_internal_test,label,Edema,sensitivity,0.2751262626262423,0.7692307692307101,500
+NIH_internal_test,label,Edema,specificity,0.8446930406881851,0.9107384036629687,500
+NIH_internal_test,label,Edema,f1,0.05794117647058768,0.23585561497325994,500
+NIH_internal_test,label,Edema,accuracy,0.8378134040501435,0.9047702025494928,500
+NIH_internal_test,label,Edema,ppv,0.030927835051546074,0.14068478260869416,500
+NIH_internal_test,label,Edema,npv,0.9811741518292127,0.9955025759292211,500
+NIH_internal_test,label,No Finding,auroc,0.6296316430220458,0.7233547468704996,500
+NIH_internal_test,label,No Finding,auprc,0.6011913334349326,0.7259232781255752,500
+NIH_internal_test,label,No Finding,sensitivity,0.7146505376344067,0.8195176948005369,500
+NIH_internal_test,label,No Finding,specificity,0.4055555555555544,0.5212208666831197,500
+NIH_internal_test,label,No Finding,f1,0.6231356874087755,0.7124476405523914,500
+NIH_internal_test,label,No Finding,accuracy,0.5779808301552947,0.6585735794074784,500
+NIH_internal_test,label,No Finding,ppv,0.5427834567251669,0.646879329890413,500
+NIH_internal_test,label,No Finding,npv,0.5897543988269771,0.7271196002578953,500
+NIH_internal_test,label,Pleural Effusion,auroc,0.6497728432301993,0.7634276101609512,500
+NIH_internal_test,label,Pleural Effusion,auprc,0.2581391609476819,0.4310560570053725,500
+NIH_internal_test,label,Pleural Effusion,sensitivity,0.5687128980032327,0.7612475247524684,500
+NIH_internal_test,label,Pleural Effusion,specificity,0.561329407349061,0.6582317660274402,500
+NIH_internal_test,label,Pleural Effusion,f1,0.2779812007277131,0.4090423901940746,500
+NIH_internal_test,label,Pleural Effusion,accuracy,0.5752639004449581,0.6614231703008837,500
+NIH_internal_test,label,Pleural Effusion,ppv,0.1794037940379398,0.2834090823811926,500
+NIH_internal_test,label,Pleural Effusion,npv,0.8840201657182766,0.9434042576899696,500
+NIH_internal_test,label,Pneumonia,auroc,0.5218554106459838,0.75090123439297,500
+NIH_internal_test,label,Pneumonia,auprc,0.020402216365573076,0.07976799041085442,500
+NIH_internal_test,label,Pneumonia,sensitivity,0.0,0.4642307692307359,500
+NIH_internal_test,label,Pneumonia,specificity,0.8077431969145049,0.8737152243299516,500
+NIH_internal_test,label,Pneumonia,f1,0.0,0.12558292043136016,500
+NIH_internal_test,label,Pneumonia,accuracy,0.7956774721410785,0.8594726011483941,500
+NIH_internal_test,label,Pneumonia,ppv,0.0,0.07296008869179538,500
+NIH_internal_test,label,Pneumonia,npv,0.9672640094289066,0.9890477135131942,500
+NIH_internal_test,label,Pneumothorax,auroc,0.5351381812790708,0.7541655292994993,500
+NIH_internal_test,label,Pneumothorax,auprc,0.08465487432259308,0.36594282876044804,500
+NIH_internal_test,label,Pneumothorax,sensitivity,0.20738636363635857,0.5584986320109291,500
+NIH_internal_test,label,Pneumothorax,specificity,0.8238515002542791,0.8851134193628863,500
+NIH_internal_test,label,Pneumothorax,f1,0.10862839111548164,0.31007799216381854,500
+NIH_internal_test,label,Pneumothorax,accuracy,0.7949874752113547,0.8593506629899705,500
+NIH_internal_test,label,Pneumothorax,ppv,0.07258064516128974,0.2201980615254931,500
+NIH_internal_test,label,Pneumothorax,npv,0.9399350649350634,0.9741737453749528,500
+NIH_internal_test,macro,macro,auroc,0.6372599409843939,0.7149911817104571,500
+NIH_internal_test,macro,macro,auprc,0.19255381106515476,0.2470956053582195,500
+NIH_internal_test,macro,macro,sensitivity,0.39263034521064316,0.5153731314179367,500
+NIH_internal_test,macro,macro,specificity,0.7569530421759412,0.7866674368000507,500
+NIH_internal_test,macro,macro,f1,0.2199360799524947,0.2798565709984389,500
+NIH_internal_test,macro,macro,accuracy,0.7539133836319543,0.7906277243931251,500
+NIH_internal_test,macro,macro,ppv,0.17231901280395423,0.2208246262467337,500
+NIH_internal_test,macro,macro,npv,0.9062255768265918,0.9270882442329008,500
+NIH_internal_test,micro,micro,auroc,0.7386547706969765,0.7993143866295177,500
+NIH_internal_test,micro,micro,auprc,0.2980375309723404,0.3961411313490473,500
+NIH_internal_test,micro,micro,sensitivity,0.5704096787988757,0.6555983018837718,500
+NIH_internal_test,micro,micro,specificity,0.7771743185724544,0.8126337183711783,500
+NIH_internal_test,micro,micro,f1,0.35836419310652384,0.4297851000260593,500
+NIH_internal_test,micro,micro,accuracy,0.7539133836319551,0.7906277243931262,500
+NIH_internal_test,micro,micro,ppv,0.26086350752867776,0.32299324584670275,500
+NIH_internal_test,micro,micro,npv,0.9287700825396136,0.9453065105294312,500
+
+

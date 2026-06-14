@@ -1,0 +1,8 @@
+﻿dataset,subgroup_variable,subgroup,n_images,n_patients_or_identifiers,macro_AUROC,macro_AUPRC,analysis_status
+NIH internal test,sex,F,299,160,0.6809131049793002,0.2461185806787679,descriptive; not powered for fairness inference
+NIH internal test,sex,M,440,219,0.6739314555456777,0.189053897391097,descriptive; not powered for fairness inference
+NIH internal test,view_position,AP,356,220,0.6517148756025002,0.2018337791856625,descriptive; not powered for fairness inference
+NIH internal test,view_position,PA,383,249,0.6781823991947679,0.2320731729992443,descriptive; not powered for fairness inference
+VinDr external,age/sex/view_position,not analyzed,1000,1000,,,cached external subset lacks reliable age/sex metadata
+
+

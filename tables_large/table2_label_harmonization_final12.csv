@@ -1,0 +1,11 @@
+﻿harmonized_label,NIH_terms,VinDr_terms,internal_analysis_role,external_positive_cases,external_evaluable,external_claim_status,caution
+Atelectasis,Atelectasis,Atelectasis,primary,131,True,external primary/sensitivity claim allowed,
+Cardiomegaly,Cardiomegaly,Cardiomegaly,primary,276,True,external primary/sensitivity claim allowed,
+Pleural Effusion,Pleural Effusion,Pleural Effusion,primary,288,True,external primary/sensitivity claim allowed,
+Pneumothorax,Pneumothorax,Pneumothorax,primary,59,True,external primary/sensitivity claim allowed,
+Consolidation,Consolidation,Consolidation,primary,175,True,external primary/sensitivity claim allowed,
+Edema,Edema,not present as positive finding in analyzed cached subset,primary internally; external unevaluable in cached subset,0,False,not used for external discrimination claims,AUROC/AUPRC are NA when the external subset has no positive cases
+Pneumonia,Pneumonia,not present as positive finding in analyzed cached subset,sensitivity internally; external unevaluable in cached subset,0,False,not used for external discrimination claims,AUROC/AUPRC are NA when the external subset has no positive cases
+No Finding,No Finding,No Finding,sensitivity/reference label,414,True,external primary/sensitivity claim allowed,
+
+

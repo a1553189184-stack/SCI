@@ -1,0 +1,19 @@
+﻿# Install torch, torchvision, and torchaudio first with the CUDA wheel command
+# in environment/create_env_commands.txt. They are listed separately because
+# the correct wheel index matters for RTX 5060 / CUDA 12.8.
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.12
+matplotlib>=3.8
+opencv-python>=4.9
+pydicom>=2.4
+Pillow>=10.0
+tqdm>=4.66
+PyYAML>=6.0
+openpyxl>=3.1
+grad-cam>=1.5
+python-docx>=1.2
+PyMuPDF>=1.27
+
+

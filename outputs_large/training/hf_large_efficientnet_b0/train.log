@@ -1,0 +1,9 @@
+﻿2026-06-14 02:38:46,810 | INFO | Starting full training
+2026-06-14 02:38:47,218 | INFO | Device: cuda | AMP: True
+2026-06-14 02:40:29,182 | INFO | epoch=1 train_loss=1.14844 val_loss=3.39786 val_macro_auprc=0.21000 best=0.21000 improved=True
+2026-06-14 02:40:57,082 | INFO | epoch=2 train_loss=1.02866 val_loss=3.35342 val_macro_auprc=0.22972 best=0.22972 improved=True
+2026-06-14 02:41:24,050 | INFO | epoch=3 train_loss=0.93838 val_loss=4.30743 val_macro_auprc=0.23950 best=0.23950 improved=True
+2026-06-14 02:41:51,020 | INFO | epoch=4 train_loss=0.82914 val_loss=4.28776 val_macro_auprc=0.26215 best=0.26215 improved=True
+2026-06-14 02:42:18,172 | INFO | epoch=5 train_loss=0.69253 val_loss=6.29461 val_macro_auprc=0.25672 best=0.26215 improved=False
+
+

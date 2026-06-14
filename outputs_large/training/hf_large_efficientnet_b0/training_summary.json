@@ -1,0 +1,18 @@
+﻿{
+  "best_checkpoint": "<PROJECT_ROOT>\\models_large\\hf_large_efficientnet_b0\\best_efficientnet_b0.pt",
+  "last_checkpoint": "<PROJECT_ROOT>\\models_large\\hf_large_efficientnet_b0\\last_efficientnet_b0.pt",
+  "log_csv": "<PROJECT_ROOT>\\logs_large\\hf_large_efficientnet_b0_train_log.csv",
+  "best_val_macro_auprc": 0.26215329550772215,
+  "labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Pleural Effusion",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Pneumonia",
+    "No Finding"
+  ],
+  "smoke": false
+}
+

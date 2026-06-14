@@ -1,0 +1,9 @@
+﻿dataset,role,split,n_images,n_patients,patient_level_split,notes
+NIH ChestX-ray14 public parquet subset,development,overall,5000,3795,yes,selected public subset; frontal AP/PA images retained
+NIH ChestX-ray14 public parquet subset,development,calibration,751,379,yes,no patient overlap across NIH splits
+NIH ChestX-ray14 public parquet subset,development,internal_test,739,379,yes,no patient overlap across NIH splits
+NIH ChestX-ray14 public parquet subset,development,train,2679,2657,yes,no patient overlap across NIH splits
+NIH ChestX-ray14 public parquet subset,development,validation,831,380,yes,no patient overlap across NIH splits
+VinDr-CXR/VinBigData-derived public PNG subset,independent external validation,external,1000,1000,not applicable,image-level identifiers used as patient identifiers in cached subset; no threshold tuning or calibration fitting
+
+

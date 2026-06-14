@@ -1,0 +1,11 @@
+﻿step,command
+create environment,python -m venv .venv && .venv\Scripts\python -m pip install -r environment\requirements.txt
+prepare large cached public subset,.venv\Scripts\python scripts\prepare_hf_large.py
+train DenseNet121,.venv\Scripts\python -m src.train --config configs\hf_large.yaml
+evaluate internal,.venv\Scripts\python -m src.evaluate_internal --config configs\hf_large.yaml
+evaluate external,.venv\Scripts\python -m src.evaluate_external --config configs\hf_large.yaml
+fit calibration on NIH calibration split,.venv\Scripts\python -m src.calibration --config configs\hf_large.yaml
+generate Grad-CAM failure-mode panels,.venv\Scripts\python -m src.gradcam --config configs\hf_large.yaml
+generate manuscript assets,.venv\Scripts\python scripts\build_10_upgrade_assets.py
+
+

@@ -1,0 +1,63 @@
+﻿category,check_item
+A. Scientific claims,No clinical-readiness claim.
+A. Scientific claims,No full official-cohort claim.
+A. Scientific claims,No radiologist-level claim.
+A. Scientific claims,External AUPRC interpreted with prevalence.
+A. Scientific claims,Comparator claims remain descriptive.
+B. Dataset reporting,NIH subset size stated.
+B. Dataset reporting,VinDr-derived subset size stated.
+B. Dataset reporting,Selected public subset stated.
+B. Dataset reporting,External identifiers described cautiously.
+B. Dataset reporting,Dataset licenses acknowledged.
+C. Statistical reporting,Threshold selection from NIH validation only.
+C. Statistical reporting,NIH bootstrap patient-level.
+C. Statistical reporting,External bootstrap image-identifier-level approximation.
+C. Statistical reporting,Macro rules stated.
+C. Statistical reporting,Paired bootstrap described as descriptive.
+D. Calibration reporting,NIH-only calibration fitting stated.
+D. Calibration reporting,No external calibration fitting stated.
+D. Calibration reporting,Brier/ECE/MCE/slope/intercept reported.
+D. Calibration reporting,Temperature scaling not overstated.
+D. Calibration reporting,Platt/isotonic interpreted cautiously.
+E. Explainability reporting,Grad-CAM++ qualitative only.
+E. Explainability reporting,No localization-ground-truth claim.
+E. Explainability reporting,No reasoning-proof claim.
+E. Explainability reporting,TP/FP/FN/TN categories labeled.
+E. Explainability reporting,Additional panels placed in supplement if needed.
+F. Tables,Use compact final15 main tables.
+F. Tables,Move subgroup table to supplement if space constrained.
+F. Tables,Use short column labels.
+F. Tables,Add footnotes for split usage and NA labels.
+F. Tables,Avoid replacing NA with zero.
+G. Figures,Export 300 dpi TIFF if required.
+G. Figures,Check figure fonts and legends.
+G. Figures,Figure 2 marks Edema/Pneumonia NA.
+G. Figures,Figure 4 states NIH-only calibration fitting.
+G. Figures,Figure 6 includes zero reference line and negative-value explanation.
+H. Supplementary materials,Include supplementary methods.
+H. Supplementary materials,Include comparator label-wise tables.
+H. Supplementary materials,Include thresholds.
+H. Supplementary materials,Include AUPRC lift.
+H. Supplementary materials,Include ROC/PR and probability distribution figures.
+I. References,Verify DOI values.
+I. References,Apply Vancouver style.
+I. References,Add external-validation references for Q3 target.
+I. References,Reduce arXiv reliance where possible.
+I. References,Check reporting-guideline citations.
+J. Declarations,Fill author contributions.
+J. Declarations,Fill affiliations and corresponding author.
+J. Declarations,Confirm conflicts.
+J. Declarations,Confirm funding.
+J. Declarations,Confirm IRB wording.
+K. Cover letter,Fill journal name.
+K. Cover letter,Fill editor name.
+K. Cover letter,Confirm no prior publication.
+K. Cover letter,Confirm no concurrent submission.
+K. Cover letter,Confirm all authors approved.
+L. Journal formatting,Check abstract word limit.
+L. Journal formatting,Check manuscript word limit.
+L. Journal formatting,Check table/figure upload format.
+L. Journal formatting,Prepare reporting checklist.
+L. Journal formatting,Scrub private paths before public release.
+
+

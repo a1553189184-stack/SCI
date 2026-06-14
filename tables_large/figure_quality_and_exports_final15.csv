@@ -1,0 +1,10 @@
+﻿figure,source_png,tiff_300dpi,width_px,height_px,dpi,format_recommendation
+figure1_study_workflow_three_models,<PROJECT_ROOT>\figures_large\figure1_study_workflow_three_models.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\figure1_study_workflow_three_models.tiff,3240,1260,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+figure2_densenet121_internal_external_ci,<PROJECT_ROOT>\figures_large\figure2_densenet121_internal_external_ci.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\figure2_densenet121_internal_external_ci.tiff,3060,1500,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+figure3_prevalence_auprc_baseline_lift,<PROJECT_ROOT>\figures_large\figure3_prevalence_auprc_baseline_lift.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\figure3_prevalence_auprc_baseline_lift.tiff,3300,1260,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+figure4_calibration_curves_upgraded,<PROJECT_ROOT>\figures_large\figure4_calibration_curves_upgraded.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\figure4_calibration_curves_upgraded.tiff,1288,620,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+figure5_gradcam_failure_modes_upgraded,<PROJECT_ROOT>\figures_large\figure5_gradcam_failure_modes_upgraded.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\figure5_gradcam_failure_modes_upgraded.tiff,1280,560,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+figure6_internal_minus_external_auroc,<PROJECT_ROOT>\figures_large\figure6_internal_minus_external_auroc.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\figure6_internal_minus_external_auroc.tiff,2340,1320,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+graphical_abstract_plan_final15,<PROJECT_ROOT>\figures_large\graphical_abstract_plan_final15.png,<PROJECT_ROOT>\figures_large\final15_tiff_300dpi\graphical_abstract_plan_final15.tiff,3450,1500,300,Submit TIFF if required by journal; PNG/PDF may be acceptable for review upload.
+
+

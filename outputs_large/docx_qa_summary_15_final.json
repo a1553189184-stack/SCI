@@ -1,0 +1,67 @@
+﻿{
+  "CXR_Manuscript_SCI_Submission_Final_15.docx": {
+    "path": "<DESKTOP>\\CXR_Manuscript_SCI_Submission_Final_15.docx",
+    "size_bytes": 928451,
+    "zip_integrity_error": null,
+    "paragraph_count": 164,
+    "table_count": 6,
+    "inline_shape_count": 6,
+    "embedded_media_count": 6,
+    "banned_positive_phrases_found": [],
+    "contains_negative_full_cohort_disclaimer": true,
+    "contains_selected_public_subset": true,
+    "contains_external_identifier_bootstrap": true,
+    "contains_repository_placeholder": true,
+    "contains_gradcam_qualitative": true,
+    "contains_zero_external_positive": true
+  },
+  "CXR_Final_Submission_Package_15.docx": {
+    "path": "<DESKTOP>\\CXR_Final_Submission_Package_15.docx",
+    "size_bytes": 303237,
+    "zip_integrity_error": null,
+    "paragraph_count": 122,
+    "table_count": 7,
+    "inline_shape_count": 1,
+    "embedded_media_count": 1,
+    "banned_positive_phrases_found": [],
+    "contains_negative_full_cohort_disclaimer": true,
+    "contains_selected_public_subset": true,
+    "contains_external_identifier_bootstrap": true,
+    "contains_repository_placeholder": true,
+    "contains_gradcam_qualitative": true,
+    "contains_zero_external_positive": true
+  },
+  "CXR_Cover_Letter_Final_15.docx": {
+    "path": "<DESKTOP>\\CXR_Cover_Letter_Final_15.docx",
+    "size_bytes": 37571,
+    "zip_integrity_error": null,
+    "paragraph_count": 20,
+    "table_count": 0,
+    "inline_shape_count": 0,
+    "embedded_media_count": 0,
+    "banned_positive_phrases_found": [],
+    "contains_negative_full_cohort_disclaimer": false,
+    "contains_selected_public_subset": true,
+    "contains_external_identifier_bootstrap": false,
+    "contains_repository_placeholder": true,
+    "contains_gradcam_qualitative": true,
+    "contains_zero_external_positive": false
+  },
+  "CXR_Supplementary_Materials_Organization_Final_15.docx": {
+    "path": "<DESKTOP>\\CXR_Supplementary_Materials_Organization_Final_15.docx",
+    "size_bytes": 37755,
+    "zip_integrity_error": null,
+    "paragraph_count": 37,
+    "table_count": 0,
+    "inline_shape_count": 0,
+    "embedded_media_count": 0,
+    "banned_positive_phrases_found": [],
+    "contains_negative_full_cohort_disclaimer": false,
+    "contains_selected_public_subset": true,
+    "contains_external_identifier_bootstrap": false,
+    "contains_repository_placeholder": false,
+    "contains_gradcam_qualitative": false,
+    "contains_zero_external_positive": true
+  }
+}
+

@@ -1,0 +1,38 @@
+﻿# Windows PowerShell commands.
+# Use Python 3.10-3.12. Python 3.11 is recommended for broad PyTorch wheel support.
+
+cd <PROJECT_ROOT>
+
+# Option A: venv
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip setuptools wheel
+
+# PyTorch CUDA build for Blackwell / RTX 50-series class GPUs.
+# This follows the official PyTorch CUDA 12.8 wheel index.
+python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+
+# Install the remaining project packages.
+python -m pip install -r environment\requirements.txt
+
+# Verify CUDA/GPU visibility and save pip freeze to logs/.
+python scripts\check_environment.py --save-freeze
+
+# If torch.cuda.is_available() is False on RTX 5060:
+# 1. Update the NVIDIA driver.
+# 2. Keep Python 3.10-3.12.
+# 3. Try PyTorch nightly CUDA 12.8 wheels:
+# python -m pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+# 4. Re-run:
+# python scripts\check_environment.py --save-freeze
+
+# Option B: conda alternative
+# conda create -n cxr_nih_vindr python=3.11 -y
+# conda activate cxr_nih_vindr
+# python -m pip install --upgrade pip setuptools wheel
+# python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# python -m pip install -r environment\requirements.txt
+# python scripts\check_environment.py --save-freeze
+
+
+

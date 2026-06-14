@@ -1,0 +1,18 @@
+﻿{
+  "best_checkpoint": "<PROJECT_ROOT>\\models_large\\hf_large_densenet121\\best_densenet121.pt",
+  "last_checkpoint": "<PROJECT_ROOT>\\models_large\\hf_large_densenet121\\last_densenet121.pt",
+  "log_csv": "<PROJECT_ROOT>\\logs_large\\hf_large_densenet121_train_log.csv",
+  "best_val_macro_auprc": 0.2766172717052375,
+  "labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Pleural Effusion",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Pneumonia",
+    "No Finding"
+  ],
+  "smoke": false
+}
+

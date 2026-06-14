@@ -1,0 +1,6 @@
+﻿model,internal_all_labels_macro_auroc,internal_all_labels_macro_auprc,internal_external_evaluable_labels_macro_auroc,internal_external_evaluable_labels_macro_auprc,external_nonzero_prevalence_labels_macro_auroc,external_nonzero_prevalence_labels_macro_auprc,full_external_reported_macro_auroc_nan_skipped,full_external_reported_macro_auprc_nan_skipped,external_evaluable_label_set,checkpoint_path
+DenseNet121,0.6802725155959937,0.2135116532463062,0.6672755747127509,0.2686717932328058,0.7425450139696842,0.43432994806280595,0.7425450139696842,0.434329948062806,Atelectasis; Cardiomegaly; Pleural Effusion; Pneumothorax; Consolidation; No Finding,<PROJECT_ROOT>\models_large\hf_large_densenet121\best_densenet121.pt
+ResNet50,0.6468712787865611,0.20040162405265,0.652953723552379,0.25436781286043325,0.7280063424628321,0.4183532881231555,0.7280063424628321,0.4183532881231555,Atelectasis; Cardiomegaly; Pleural Effusion; Pneumothorax; Consolidation; No Finding,<PROJECT_ROOT>\models_large\hf_large_resnet50\best_resnet50.pt
+EfficientNet-B0,0.6561939160993226,0.2175701518885714,0.6736572605132022,0.2709484959579833,0.6564379999391328,0.3704296989080383,0.6564379999391328,0.3704296989080384,Atelectasis; Cardiomegaly; Pleural Effusion; Pneumothorax; Consolidation; No Finding,<PROJECT_ROOT>\models_large\hf_large_efficientnet_b0\best_efficientnet_b0.pt
+
+

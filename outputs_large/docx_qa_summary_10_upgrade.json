@@ -1,0 +1,277 @@
+﻿{
+  "CXR_Manuscript_SCI_Submission_Upgraded_10.docx": {
+    "path": "<DESKTOP>\\CXR_Manuscript_SCI_Submission_Upgraded_10.docx",
+    "size_bytes": 927017,
+    "zip_integrity_error": null,
+    "paragraph_count": 132,
+    "nonempty_paragraph_count": 126,
+    "table_count": 8,
+    "inline_shape_count": 6,
+    "embedded_media_count": 6,
+    "heading_count": 37,
+    "first_30_headings": [
+      {
+        "style": "Heading 1",
+        "text": "Abstract"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Introduction"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Methods"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Study design"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Datasets"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Labels"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Data splitting and leakage control"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Preprocessing"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Models and training"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Thresholds and evaluation"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Calibration"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Explainability"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Statistical analysis"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Results"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Discussion"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Limitations"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Conclusion"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Data and Code Availability"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Ethics Statement"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Main Tables"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Table 1. Dataset characteristics and split roles"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Table 2. Label harmonization and analysis role"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Table 3. DenseNet121 label-wise internal and external performance"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Table 4. Macro architecture comparison"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Table 5. Calibration metrics before and after NIH-fitted calibration"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Table 6. Subgroup and sensitivity analysis"
+      },
+      {
+        "style": "Heading 1",
+        "text": "Figures"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Figure 1. Study workflow"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Figure 2. DenseNet121 internal and external AUROC/AUPRC"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Figure 3. AUPRC baseline and lift"
+      }
+    ],
+    "placeholders_found": [],
+    "contains_external_no_tuning_statement": true,
+    "contains_gradcam_limit_statement": true,
+    "contains_zero_positive_warning": true
+  },
+  "CXR_10_Systematic_Upgrade_Report.docx": {
+    "path": "<DESKTOP>\\CXR_10_Systematic_Upgrade_Report.docx",
+    "size_bytes": 516225,
+    "zip_integrity_error": null,
+    "paragraph_count": 115,
+    "nonempty_paragraph_count": 112,
+    "table_count": 6,
+    "inline_shape_count": 3,
+    "embedded_media_count": 3,
+    "heading_count": 31,
+    "first_30_headings": [
+      {
+        "style": "Heading 1",
+        "text": "1. Reviewer-style overall diagnosis"
+      },
+      {
+        "style": "Heading 1",
+        "text": "2. Revised paper positioning"
+      },
+      {
+        "style": "Heading 1",
+        "text": "3. Recommended titles"
+      },
+      {
+        "style": "Heading 1",
+        "text": "4. Rewritten Abstract"
+      },
+      {
+        "style": "Heading 1",
+        "text": "5. Rewritten Introduction"
+      },
+      {
+        "style": "Heading 1",
+        "text": "6. Rewritten Methods"
+      },
+      {
+        "style": "Heading 1",
+        "text": "7. Rewritten Results"
+      },
+      {
+        "style": "Heading 1",
+        "text": "8. Rewritten Discussion"
+      },
+      {
+        "style": "Heading 1",
+        "text": "9. Rewritten Limitations"
+      },
+      {
+        "style": "Heading 1",
+        "text": "10. Rewritten Conclusion"
+      },
+      {
+        "style": "Heading 1",
+        "text": "11. Data/Code Availability"
+      },
+      {
+        "style": "Heading 1",
+        "text": "12. Ethics Statement"
+      },
+      {
+        "style": "Heading 1",
+        "text": "13. Main table design"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Main Table 1"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Main Table 2"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Main Table 3"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Main Table 4"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Main Table 5"
+      },
+      {
+        "style": "Heading 1",
+        "text": "14. Supplementary table design"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Supplementary Table 6 excerpt"
+      },
+      {
+        "style": "Heading 1",
+        "text": "15. Figure design and captions"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Figure preview 1"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Figure preview 2"
+      },
+      {
+        "style": "Heading 2",
+        "text": "Figure preview 3"
+      },
+      {
+        "style": "Heading 1",
+        "text": "16. Mandatory statistics list"
+      },
+      {
+        "style": "Heading 1",
+        "text": "17. Reference expansion advice"
+      },
+      {
+        "style": "Heading 1",
+        "text": "18. Pre-submission checklist"
+      },
+      {
+        "style": "Heading 1",
+        "text": "19. SCI Q4 feasibility"
+      },
+      {
+        "style": "Heading 1",
+        "text": "20. SCI Q3 feasibility"
+      },
+      {
+        "style": "Heading 1",
+        "text": "21. Remaining data/file list"
+      }
+    ],
+    "placeholders_found": [],
+    "contains_external_no_tuning_statement": true,
+    "contains_gradcam_limit_statement": true,
+    "contains_zero_positive_warning": true
+  }
+}
+

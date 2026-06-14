@@ -1,0 +1,11 @@
+﻿harmonized_label,nih_terms,vindr_terms,role,definition_risk,missing_label_rule
+Atelectasis,Atelectasis,Atelectasis,primary,"Usually compatible, but report-mined NIH labels and radiologist VinDr labels may differ in sensitivity.",Treat missing source label as negative after image-level label aggregation.
+Cardiomegaly,Cardiomegaly,Cardiomegaly,primary,"Usually reliable across datasets, but projection and cardiothoracic-ratio conventions may differ.",Treat missing source label as negative after image-level label aggregation.
+Pleural Effusion,Effusion; Pleural Effusion,Pleural effusion; Pleural Effusion; Effusion,primary,Name differs across datasets; explicitly report the NIH Effusion to Pleural Effusion mapping.,Map NIH Effusion to Pleural Effusion; treat missing source label as negative after aggregation.
+Pneumothorax,Pneumothorax,Pneumothorax,primary,"Usually compatible, but small pneumothoraces may be annotation-policy dependent.",Treat missing source label as negative after image-level label aggregation.
+Consolidation,Consolidation,Consolidation,primary,Potential overlap with Pneumonia and opacity definitions; discuss as a harmonization limitation.,Treat missing source label as negative after image-level label aggregation.
+Edema,Edema,Pulmonary edema; Edema,conditional_primary,Conditional label; exclude from primary claims if VinDr label semantics or prevalence are inconsistent.,Include in primary analysis only if the VinDr source label is available and mapping is verified.
+Pneumonia,Pneumonia,Pneumonia,sensitivity,Definitions differ across datasets and overlap with Consolidation; do not make this a main claim.,Treat as sensitivity label because report-derived and radiologist definitions may not align.
+No Finding,No Finding; No finding,No finding; No Finding; No abnormality,sensitivity,Highly dependent on report scope and annotation rules; do not make this a main diagnostic claim.,Set positive only when source explicitly indicates no finding; otherwise treat as negative or unknown according to dataset policy.
+
+

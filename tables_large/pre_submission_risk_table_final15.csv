@@ -1,0 +1,17 @@
+﻿Risk item,Why it matters,Current status,Required action,Severity,Suggested wording
+Selected public subset,Reviewers may question generalizability to full cohorts.,Explicitly stated throughout.,"Keep public-subset wording in title, abstract, methods, captions.",High,selected public external subset
+Incomplete external labels,Some NIH labels are not externally evaluable.,External-evaluable set defined.,Keep macro summaries restricted to nonzero-prevalence labels.,High,external-evaluable labels
+Edema/Pneumonia zero positives,External AUROC/AUPRC are not calculable.,Marked as not used for external claims.,Keep NA values and explain in Table 2/Figure 2.,High,not used for external discrimination claims
+External patient identifiers limited,Affects bootstrap interpretation.,Image identifiers used.,State image-identifier-level bootstrap approximation.,High,image-identifier-level bootstrap approximation
+External bootstrap approximation,CIs may be optimistic if images are correlated.,Disclosed.,Retain as limitation.,Medium,interpreted as an approximation
+AUPRC prevalence sensitivity,External AUPRC can rise with prevalence/case mix.,AUPRC lift table generated.,Discuss prevalence baseline.,High,prevalence-aware interpretation
+Calibration transfer instability,ECE alone can be misleading.,Brier/ECE/MCE/slope/intercept reported.,Avoid global improvement claims.,High,method-dependent calibration effects
+Grad-CAM++ overinterpretation,Saliency is not proof of reasoning.,Qualitative-only wording used.,Keep limitation in caption and discussion.,High,qualitative failure-mode review
+No prospective validation,Limits clinical inference.,Acknowledged.,Do not claim deployment readiness.,High,does not establish clinical readiness
+No reader study,Cannot compare with radiologists.,Acknowledged.,Avoid radiologist-level claims.,Medium,not compared with readers
+Table formatting,Wide tables may be hard to fit.,Final15 compact tables created.,Move subgroup table to supplement if journal space is limited.,Medium,compact main table with explanatory footnote
+Figure quality,Journal may require 300 dpi TIFF.,300 dpi TIFF exports generated.,Upload TIFF or PDF according to journal.,Medium,300 dpi figure export
+Repository link missing,Data/code availability incomplete.,Placeholder retained.,Fill repository or archive link.,High,[TO BE FILLED: repository or archive link]
+Reference format not finalized,Submission can be delayed or rejected at technical check.,Reference advice generated.,Verify DOI and apply Vancouver style.,Medium,[DOI TO BE VERIFIED] where needed
+
+

@@ -1,0 +1,18 @@
+﻿{
+  "best_checkpoint": "<PROJECT_ROOT>\\models_large\\hf_large_resnet50\\best_resnet50.pt",
+  "last_checkpoint": "<PROJECT_ROOT>\\models_large\\hf_large_resnet50\\last_resnet50.pt",
+  "log_csv": "<PROJECT_ROOT>\\logs_large\\hf_large_resnet50_train_log.csv",
+  "best_val_macro_auprc": 0.25599226758731475,
+  "labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Pleural Effusion",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Pneumonia",
+    "No Finding"
+  ],
+  "smoke": false
+}
+

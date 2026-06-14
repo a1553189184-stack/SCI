@@ -1,0 +1,9 @@
+﻿dataset,role,split,n_images,n_patients_or_identifiers,split_level,used_for_training,used_for_threshold_selection,used_for_calibration_fitting,used_for_final_evaluation
+NIH ChestX-ray14 public parquet subset,development,overall,5000,3795,patient-level split applied within NIH,no,no,no,no
+NIH ChestX-ray14 public parquet subset,development,calibration,751,379,patient-level,no,no,yes,no
+NIH ChestX-ray14 public parquet subset,development,internal_test,739,379,patient-level,no,no,no,yes
+NIH ChestX-ray14 public parquet subset,development,train,2679,2657,patient-level,yes,no,no,no
+NIH ChestX-ray14 public parquet subset,development,validation,831,380,patient-level,no,yes,no,no
+VinDr-CXR/VinBigData-derived public PNG subset,independent external validation,external,1000,1000,image-identifier-level external subset,no,no,no,yes
+
+

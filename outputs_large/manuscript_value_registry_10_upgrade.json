@@ -1,0 +1,111 @@
+﻿{
+  "created_from": "real prediction CSVs and metrics CSVs only",
+  "external_evaluable_labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Pleural Effusion",
+    "Pneumothorax",
+    "Consolidation",
+    "No Finding"
+  ],
+  "dataset": {
+    "nih_images": 5000,
+    "nih_patients": 3795,
+    "vindr_images": 1000,
+    "vindr_patients": 1000
+  },
+  "densenet121": {
+    "internal_all_label_macro_auroc": "0.680",
+    "internal_all_label_macro_auprc": "0.214",
+    "external_reported_macro_auroc": "0.743",
+    "external_reported_macro_auprc": "0.434",
+    "internal_external_evaluable_macro_auroc": "0.667",
+    "internal_external_evaluable_macro_auprc": "0.269",
+    "external_nonzero_prevalence_macro_auroc": "0.743",
+    "external_nonzero_prevalence_macro_auprc": "0.434"
+  },
+  "models": [
+    {
+      "model": "DenseNet121",
+      "internal_all_labels_macro_auroc": 0.6802725155959937,
+      "internal_all_labels_macro_auprc": 0.2135116532463062,
+      "internal_external_evaluable_labels_macro_auroc": 0.6672755747127509,
+      "internal_external_evaluable_labels_macro_auprc": 0.2686717932328058,
+      "external_nonzero_prevalence_labels_macro_auroc": 0.7425450139696842,
+      "external_nonzero_prevalence_labels_macro_auprc": 0.43432994806280595,
+      "full_external_reported_macro_auroc_nan_skipped": 0.7425450139696842,
+      "full_external_reported_macro_auprc_nan_skipped": 0.434329948062806,
+      "external_evaluable_label_set": "Atelectasis; Cardiomegaly; Pleural Effusion; Pneumothorax; Consolidation; No Finding",
+      "checkpoint_path": "<PROJECT_ROOT>\\models_large\\hf_large_densenet121\\best_densenet121.pt"
+    },
+    {
+      "model": "ResNet50",
+      "internal_all_labels_macro_auroc": 0.6468712787865611,
+      "internal_all_labels_macro_auprc": 0.20040162405265,
+      "internal_external_evaluable_labels_macro_auroc": 0.652953723552379,
+      "internal_external_evaluable_labels_macro_auprc": 0.25436781286043325,
+      "external_nonzero_prevalence_labels_macro_auroc": 0.7280063424628321,
+      "external_nonzero_prevalence_labels_macro_auprc": 0.4183532881231555,
+      "full_external_reported_macro_auroc_nan_skipped": 0.7280063424628321,
+      "full_external_reported_macro_auprc_nan_skipped": 0.4183532881231555,
+      "external_evaluable_label_set": "Atelectasis; Cardiomegaly; Pleural Effusion; Pneumothorax; Consolidation; No Finding",
+      "checkpoint_path": "<PROJECT_ROOT>\\models_large\\hf_large_resnet50\\best_resnet50.pt"
+    },
+    {
+      "model": "EfficientNet-B0",
+      "internal_all_labels_macro_auroc": 0.6561939160993226,
+      "internal_all_labels_macro_auprc": 0.2175701518885714,
+      "internal_external_evaluable_labels_macro_auroc": 0.6736572605132022,
+      "internal_external_evaluable_labels_macro_auprc": 0.2709484959579833,
+      "external_nonzero_prevalence_labels_macro_auroc": 0.6564379999391328,
+      "external_nonzero_prevalence_labels_macro_auprc": 0.3704296989080383,
+      "full_external_reported_macro_auroc_nan_skipped": 0.6564379999391328,
+      "full_external_reported_macro_auprc_nan_skipped": 0.3704296989080384,
+      "external_evaluable_label_set": "Atelectasis; Cardiomegaly; Pleural Effusion; Pneumothorax; Consolidation; No Finding",
+      "checkpoint_path": "<PROJECT_ROOT>\\models_large\\hf_large_efficientnet_b0\\best_efficientnet_b0.pt"
+    }
+  ],
+  "calibration": {
+    "internal_uncalibrated_brier": "0.193",
+    "internal_uncalibrated_ece": "0.269",
+    "internal_uncalibrated_mce": "0.539",
+    "internal_uncalibrated_slope": "0.633",
+    "internal_uncalibrated_intercept": "-2.285",
+    "best_external_ece_method": "isotonic",
+    "best_external_ece": "0.095"
+  },
+  "tables": {
+    "table1_dataset_characteristics_upgraded.csv": "<PROJECT_ROOT>\\tables_large\\table1_dataset_characteristics_upgraded.csv",
+    "table2_label_harmonization_analysis_role_upgraded.csv": "<PROJECT_ROOT>\\tables_large\\table2_label_harmonization_analysis_role_upgraded.csv",
+    "table3_densenet121_labelwise_performance.csv": "<PROJECT_ROOT>\\tables_large\\table3_densenet121_labelwise_performance.csv",
+    "table4_architecture_comparison_macro_upgraded.csv": "<PROJECT_ROOT>\\tables_large\\table4_architecture_comparison_macro_upgraded.csv",
+    "table5_calibration_metrics_upgraded.csv": "<PROJECT_ROOT>\\tables_large\\table5_calibration_metrics_upgraded.csv",
+    "table6_subgroup_sensitivity_analysis.csv": "<PROJECT_ROOT>\\tables_large\\table6_subgroup_sensitivity_analysis.csv",
+    "supplementary_table1_resnet50_labelwise_performance.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table1_resnet50_labelwise_performance.csv",
+    "supplementary_table2_efficientnet_b0_labelwise_performance.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table2_efficientnet_b0_labelwise_performance.csv",
+    "supplementary_table3_per_label_thresholds.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table3_per_label_thresholds.csv",
+    "supplementary_table4_auprc_baseline_lift.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table4_auprc_baseline_lift.csv",
+    "supplementary_table5_per_label_calibration_metrics.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table5_per_label_calibration_metrics.csv",
+    "supplementary_table6_paired_bootstrap_model_comparison.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table6_paired_bootstrap_model_comparison.csv",
+    "supplementary_table7_hyperparameters.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table7_hyperparameters.csv",
+    "supplementary_table8_reproducibility_environment_commands.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table8_reproducibility_environment_commands.csv",
+    "supplementary_table9_medmnist_pipeline_verification.csv": "<PROJECT_ROOT>\\tables_large\\supplementary_table9_medmnist_pipeline_verification.csv",
+    "external_evaluable_label_set.csv": "<PROJECT_ROOT>\\tables_large\\external_evaluable_label_set.csv"
+  },
+  "figures": {
+    "figure1": "<PROJECT_ROOT>\\figures_large\\figure1_study_workflow_three_models.png",
+    "figure2": "<PROJECT_ROOT>\\figures_large\\figure2_densenet121_internal_external_ci.png",
+    "figure3": "<PROJECT_ROOT>\\figures_large\\figure3_prevalence_auprc_baseline_lift.png",
+    "figure4": "<PROJECT_ROOT>\\figures_large\\figure4_calibration_curves_upgraded.png",
+    "figure5": "<PROJECT_ROOT>\\figures_large\\figure5_gradcam_failure_modes_upgraded.png",
+    "figure6": "<PROJECT_ROOT>\\figures_large\\figure6_internal_minus_external_auroc.png"
+  },
+  "risk_guardrails": [
+    "NIH split is patient-level.",
+    "VinDr external subset was not used for threshold tuning, model selection, retraining, or calibration fitting.",
+    "Calibration models were fitted on NIH calibration only.",
+    "Edema and Pneumonia have zero external positives in the analyzed cached subset and are not used for external discrimination claims.",
+    "Grad-CAM++ is reported only as qualitative failure-mode analysis."
+  ]
+}
+

@@ -1,0 +1,11 @@
+﻿label,n_images,positive_images,prevalence
+Atelectasis,5000,477,0.0954
+Cardiomegaly,5000,127,0.0254
+Pleural Effusion,5000,560,0.112
+Pneumothorax,5000,257,0.0514
+Consolidation,5000,208,0.0416
+Edema,5000,102,0.0204
+Pneumonia,5000,74,0.0148
+No Finding,5000,2739,0.5478
+
+

@@ -1,0 +1,91 @@
+﻿labels:
+  - harmonized: Atelectasis
+    status: primary
+    nih:
+      source_labels: ["Atelectasis"]
+    vindr:
+      source_labels: ["Atelectasis"]
+    missing_label_rule: "Treat missing source label as negative after image-level label aggregation."
+    definition_risk: "Usually compatible, but report-mined NIH labels and radiologist VinDr labels may differ in sensitivity."
+    include_in_primary: true
+
+  - harmonized: Cardiomegaly
+    status: primary
+    nih:
+      source_labels: ["Cardiomegaly"]
+    vindr:
+      source_labels: ["Cardiomegaly"]
+    missing_label_rule: "Treat missing source label as negative after image-level label aggregation."
+    definition_risk: "Usually reliable across datasets, but projection and cardiothoracic-ratio conventions may differ."
+    include_in_primary: true
+
+  - harmonized: Pleural Effusion
+    status: primary
+    nih:
+      source_labels: ["Effusion", "Pleural Effusion"]
+    vindr:
+      source_labels: ["Pleural effusion", "Pleural Effusion", "Effusion"]
+    missing_label_rule: "Map NIH Effusion to Pleural Effusion; treat missing source label as negative after aggregation."
+    definition_risk: "Name differs across datasets; explicitly report the NIH Effusion to Pleural Effusion mapping."
+    include_in_primary: true
+
+  - harmonized: Pneumothorax
+    status: primary
+    nih:
+      source_labels: ["Pneumothorax"]
+    vindr:
+      source_labels: ["Pneumothorax"]
+    missing_label_rule: "Treat missing source label as negative after image-level label aggregation."
+    definition_risk: "Usually compatible, but small pneumothoraces may be annotation-policy dependent."
+    include_in_primary: true
+
+  - harmonized: Consolidation
+    status: primary
+    nih:
+      source_labels: ["Consolidation"]
+    vindr:
+      source_labels: ["Consolidation"]
+    missing_label_rule: "Treat missing source label as negative after image-level label aggregation."
+    definition_risk: "Potential overlap with Pneumonia and opacity definitions; discuss as a harmonization limitation."
+    include_in_primary: true
+
+  - harmonized: Edema
+    status: conditional_primary
+    nih:
+      source_labels: ["Edema"]
+    vindr:
+      source_labels: ["Pulmonary edema", "Edema"]
+    missing_label_rule: "Include in primary analysis only if the VinDr source label is available and mapping is verified."
+    definition_risk: "Conditional label; exclude from primary claims if VinDr label semantics or prevalence are inconsistent."
+    include_in_primary: true
+    warning: "Use Edema as primary only after verifying VinDr label definition and enough positives."
+
+  - harmonized: Pneumonia
+    status: sensitivity
+    nih:
+      source_labels: ["Pneumonia"]
+    vindr:
+      source_labels: ["Pneumonia"]
+    missing_label_rule: "Treat as sensitivity label because report-derived and radiologist definitions may not align."
+    definition_risk: "Definitions differ across datasets and overlap with Consolidation; do not make this a main claim."
+    include_in_primary: false
+    warning: "Recommended for sensitivity analysis only."
+
+  - harmonized: No Finding
+    status: sensitivity
+    nih:
+      source_labels: ["No Finding", "No finding"]
+    vindr:
+      source_labels: ["No finding", "No Finding", "No abnormality"]
+    missing_label_rule: "Set positive only when source explicitly indicates no finding; otherwise treat as negative or unknown according to dataset policy."
+    definition_risk: "Highly dependent on report scope and annotation rules; do not make this a main diagnostic claim."
+    include_in_primary: false
+    warning: "Recommended for sensitivity analysis only."
+
+excluded_or_high_risk_notes:
+  - "Exclude labels not present in both datasets or not clinically equivalent."
+  - "Pneumonia and No Finding should not dominate main claims because public-dataset definitions differ."
+  - "Edema is conditional; keep only if VinDr mapping and positive-count stability are confirmed."
+
+
+
