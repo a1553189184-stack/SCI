@@ -25,6 +25,12 @@ The checkpoint archive has been prepared outside Git:
 <DESKTOP>/CXR_model_checkpoints_v1.0-reviewer-package.zip
 ```
 
+A source/result archive without `.git` history has also been prepared outside Git for manual DOI upload workflows:
+
+```text
+<DESKTOP>/CXR_reviewer_source_package_v1.0-reviewer-package.zip
+```
+
 Archive metadata are tracked in:
 
 ```text
@@ -77,7 +83,7 @@ This release contains the code, configuration files, derived metadata, split fil
 After GitHub CLI authentication, create the release page and upload the checkpoint archive with:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\CREATE_REVIEWER_RELEASE_WITH_ASSETS.ps1 -CheckpointZip <PATH_TO_CHECKPOINT_ZIP>
+powershell -ExecutionPolicy Bypass -File .\CREATE_REVIEWER_RELEASE_WITH_ASSETS.ps1 -CheckpointZip <PATH_TO_CHECKPOINT_ZIP> -SourceZip <PATH_TO_SOURCE_ZIP>
 ```
 
 ## DOI Plan

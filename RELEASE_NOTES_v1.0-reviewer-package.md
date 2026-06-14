@@ -31,7 +31,7 @@ This reviewer package contains:
 - Large zip archives.
 - Python virtual environments and local cache files.
 
-Checkpoint files have been packaged separately as `CXR_model_checkpoints_v1.0-reviewer-package.zip` for upload as a release asset or DOI-linked archive after confirming redistribution requirements.
+Checkpoint files have been packaged separately as `CXR_model_checkpoints_v1.0-reviewer-package.zip` for upload as a release asset or DOI-linked archive after confirming redistribution requirements. A source/result archive has also been prepared as `CXR_reviewer_source_package_v1.0-reviewer-package.zip` for manual DOI upload workflows.
 
 ## Interpretation Guardrails
 

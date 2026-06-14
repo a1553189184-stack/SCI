@@ -104,7 +104,7 @@ Raw image files, virtual environments, model checkpoint files, and large zip arc
 
 GitHub blocks ordinary Git files larger than 100 MiB. If model checkpoints need to be shared, use a controlled archive, a release asset, Git LFS, Zenodo, OSF, Figshare, or another storage service after confirming dataset and institutional requirements.
 
-A checkpoint archive has been prepared outside Git as `CXR_model_checkpoints_v1.0-reviewer-package.zip`; its manifest and SHA256 checksum are tracked in `release_assets/`.
+A checkpoint archive has been prepared outside Git as `CXR_model_checkpoints_v1.0-reviewer-package.zip`; a source/result archive has been prepared as `CXR_reviewer_source_package_v1.0-reviewer-package.zip`. Their manifest and SHA256 checksums are tracked in `release_assets/`.
 
 ## Reproducibility
 

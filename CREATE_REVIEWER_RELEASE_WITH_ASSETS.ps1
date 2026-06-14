@@ -1,5 +1,6 @@
 param(
     [string]$CheckpointZip,
+    [string]$SourceZip,
     [string]$Repository = "a1553189184-stack/SCI",
     [string]$Tag = "v1.0-reviewer-package",
     [string]$Title = "CXR public-subset validation reviewer package v1.0"
@@ -23,6 +24,10 @@ if (-not (Test-Path $CheckpointZip)) {
     throw "Checkpoint archive not found: $CheckpointZip"
 }
 
+if ($SourceZip -and -not (Test-Path $SourceZip)) {
+    throw "Source archive not found: $SourceZip"
+}
+
 try {
     gh auth status
 } catch {
@@ -44,12 +49,17 @@ if (-not $releaseExists) {
         --verify-tag
 }
 
-gh release upload $Tag `
-    $CheckpointZip `
-    release_assets/CHECKPOINT_MANIFEST_v1.0-reviewer-package.csv `
-    release_assets/SHA256SUMS_checkpoints_v1.0-reviewer-package.txt `
-    release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv `
-    --repo $Repository `
-    --clobber
+$assetFiles = @(
+    $CheckpointZip,
+    "release_assets/CHECKPOINT_MANIFEST_v1.0-reviewer-package.csv",
+    "release_assets/SHA256SUMS_checkpoints_v1.0-reviewer-package.txt",
+    "release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv"
+)
+
+if ($SourceZip) {
+    $assetFiles = @($SourceZip) + $assetFiles
+}
+
+gh release upload $Tag $assetFiles --repo $Repository --clobber
 
 Write-Host "Release ready: https://github.com/$Repository/releases/tag/$Tag"

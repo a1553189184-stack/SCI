@@ -7,6 +7,7 @@ This file documents the DOI step for the reviewer package.
 - GitHub repository: `https://github.com/a1553189184-stack/SCI`
 - Fixed tag: `v1.0-reviewer-package`
 - Checkpoint archive prepared locally as: `<DESKTOP>/CXR_model_checkpoints_v1.0-reviewer-package.zip`
+- Source/result archive prepared locally as: `<DESKTOP>/CXR_reviewer_source_package_v1.0-reviewer-package.zip`
 - Checkpoint archive SHA256: see `release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv`
 - DOI status: pending. Do not cite a DOI until Zenodo or another DOI repository has issued one.
 
@@ -29,7 +30,7 @@ Use this route if the GitHub integration does not capture all required files or 
 
 1. Create a new Zenodo upload.
 2. Upload:
-   - repository source archive from the GitHub release
+   - `CXR_reviewer_source_package_v1.0-reviewer-package.zip` or the source archive from the GitHub release
    - `CXR_model_checkpoints_v1.0-reviewer-package.zip`, if checkpoint sharing is permitted
    - `REPOSITORY_FILE_MANIFEST.csv`
    - `release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv`
@@ -45,4 +46,3 @@ Use this route if the GitHub integration does not capture all required files or 
 - Do not list fake creators or affiliations.
 - Do not upload raw NIH ChestX-ray14 or VinDr-CXR images unless the original dataset terms allow redistribution.
 - Confirm that model checkpoint sharing is allowed under dataset and institutional requirements before public release.
-
