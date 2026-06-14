@@ -62,6 +62,23 @@ Edema and Pneumonia had zero positive cases in the selected external subset and 
 - `logs_large/`: training logs.
 - `data/RAW_DATA_OMITTED.md`: explains why raw images are not redistributed.
 - `models_large/MODEL_CHECKPOINTS_OMITTED.md`: explains why large checkpoint files are not tracked in Git.
+- `REVIEWER_REPRODUCIBILITY_CHECKLIST.md`: maps manuscript claims, tables, and figures to concrete files.
+- `DATA_ACCESS_AND_RECONSTRUCTION.md`: documents public data sources and reconstruction commands.
+- `REPORTING_CHECKLIST_TRIPOD_AI_CLAIM.md`: audits TRIPOD+AI/CLAIM-facing reporting completeness.
+- `DATA_AND_CODE_AVAILABILITY.md`: provides submission-ready availability wording.
+- `RELEASE_AND_CHECKPOINT_PLAN.md`: describes the checkpoint and DOI/release plan.
+- `REPOSITORY_FILE_MANIFEST.csv`: lists repository files and sizes.
+
+## Reviewer Quick Start
+
+Start with these files:
+
+1. `REVIEWER_REPRODUCIBILITY_CHECKLIST.md`
+2. `DATA_ACCESS_AND_RECONSTRUCTION.md`
+3. `REPORTING_CHECKLIST_TRIPOD_AI_CLAIM.md`
+4. `DATA_AND_CODE_AVAILABILITY.md`
+
+These files map each major manuscript table and figure to the corresponding prediction CSV, metric table, script, and configuration file.
 
 ## Final Submission Files
 
@@ -118,6 +135,9 @@ The completed run used:
 ## Data Availability
 
 The original NIH ChestX-ray14 and VinDr-CXR/VinBigData-derived image and label resources should be obtained from their official public sources. Users must follow the original dataset licenses, access conditions, and citation requirements.
+
+- NIH ChestX-ray14: https://docs.cloud.google.com/healthcare-api/docs/resources/public-datasets/nih-chest
+- VinDr-CXR v1.0.0: https://physionet.org/content/vindr-cxr/1.0.0/
 
 This repository provides derived metadata, splits, predictions, result tables, figures, and code needed to audit the reported public-subset experiment.
 
