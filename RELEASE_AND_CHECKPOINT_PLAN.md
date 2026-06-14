@@ -58,6 +58,12 @@ Recommended release notes:
 This release contains the code, configuration files, derived metadata, split files, prediction CSVs, metric tables, manuscript-ready figures, training logs, package-version records, and final submission-oriented documents for the selected-public-subset NIH ChestX-ray14 to VinDr-CXR validation study. Raw images and model checkpoints are not included in the Git tree. Raw images should be obtained from the original dataset providers. Checkpoint files may be added as release assets after confirming dataset and institutional requirements.
 ```
 
+After GitHub CLI authentication, create the release page with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\CREATE_GITHUB_RELEASE_AFTER_LOGIN.ps1
+```
+
 ## DOI Plan
 
 GitHub URLs are useful but are not a substitute for a persistent scholarly identifier. Before final submission, create an archival record through Zenodo, OSF, Figshare, Dryad, or an institutional repository and record the DOI here:
@@ -68,4 +74,3 @@ Checkpoint DOI or release asset URL: pending
 ```
 
 Do not invent a DOI in the manuscript. Use `pending` until the archive record exists and resolves.
-
