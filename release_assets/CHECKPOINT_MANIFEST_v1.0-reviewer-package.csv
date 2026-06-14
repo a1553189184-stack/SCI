@@ -1,0 +1,4 @@
+﻿"model","role","archive_path","size_bytes","size_mb","sha256","config"
+"DenseNet121","main","checkpoints\hf_large_densenet121\best_densenet121.pt","84483237","80.57","d449d0bcf5852bc1d6ecb1b5ef0ba33f5f5aa877d5082f5750b16cd4ba8aee3f","configs/hf_large.yaml"
+"ResNet50","comparison","checkpoints\hf_large_resnet50\best_resnet50.pt","282760687","269.66","52c708fb0efe7dfda3523b1fb5dc35add87672ee60891f4866c542e6262efdaa","configs/hf_large_resnet50.yaml"
+"EfficientNet-B0","comparison","checkpoints\hf_large_efficientnet_b0\best_efficientnet_b0.pt","48712506","46.46","fd46e0e0be64127d753f372d5704aa89490c575064e1e67d89e9ca5b9f3c2d8b","configs/hf_large_efficientnet_b0.yaml"

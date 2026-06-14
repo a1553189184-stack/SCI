@@ -19,6 +19,10 @@ This reviewer package contains:
   - `DATA_AND_CODE_AVAILABILITY.md`
   - `RELEASE_AND_CHECKPOINT_PLAN.md`
   - `REPOSITORY_FILE_MANIFEST.csv`
+- Checkpoint release metadata:
+  - `release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv`
+  - `release_assets/CHECKPOINT_MANIFEST_v1.0-reviewer-package.csv`
+  - `release_assets/SHA256SUMS_checkpoints_v1.0-reviewer-package.txt`
 
 ## Not Included
 
@@ -27,6 +31,8 @@ This reviewer package contains:
 - Large zip archives.
 - Python virtual environments and local cache files.
 
+Checkpoint files have been packaged separately as `CXR_model_checkpoints_v1.0-reviewer-package.zip` for upload as a release asset or DOI-linked archive after confirming redistribution requirements.
+
 ## Interpretation Guardrails
 
 - This is a selected public-subset validation package, not a full official-cohort benchmark.
@@ -34,4 +40,3 @@ This reviewer package contains:
 - External discrimination claims are limited to external labels with nonzero positives.
 - Grad-CAM++ panels are qualitative failure-mode analysis, not evidence of clinical reasoning.
 - The study does not establish clinical readiness.
-

@@ -10,6 +10,12 @@ Expected local checkpoint paths from the completed run:
 
 If checkpoints are to be shared, use a controlled archive, GitHub Release with appropriate limits, Zenodo/OSF/Figshare, or Git LFS after confirming license and policy constraints.
 
+A checkpoint archive has been prepared outside Git as:
+
+- `CXR_model_checkpoints_v1.0-reviewer-package.zip`
+
+The archive manifest and SHA256 checksum are tracked in `release_assets/`.
+
 See `../RELEASE_AND_CHECKPOINT_PLAN.md` for the reviewer-facing release and checkpoint deposition plan.
 
 

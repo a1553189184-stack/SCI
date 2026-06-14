@@ -67,6 +67,9 @@ Edema and Pneumonia had zero positive cases in the selected external subset and 
 - `REPORTING_CHECKLIST_TRIPOD_AI_CLAIM.md`: audits TRIPOD+AI/CLAIM-facing reporting completeness.
 - `DATA_AND_CODE_AVAILABILITY.md`: provides submission-ready availability wording.
 - `RELEASE_AND_CHECKPOINT_PLAN.md`: describes the checkpoint and DOI/release plan.
+- `ZENODO_DOI_INSTRUCTIONS.md`: describes the Zenodo DOI workflow.
+- `ZENODO_METADATA_TEMPLATE.json`: provides metadata fields for a DOI-linked record.
+- `release_assets/`: contains checkpoint archive manifests and SHA256 checksums.
 - `REPOSITORY_FILE_MANIFEST.csv`: lists repository files and sizes.
 
 ## Reviewer Quick Start
@@ -100,6 +103,8 @@ Main figure TIFF exports are in:
 Raw image files, virtual environments, model checkpoint files, and large zip archives are intentionally omitted from this GitHub-safe repository.
 
 GitHub blocks ordinary Git files larger than 100 MiB. If model checkpoints need to be shared, use a controlled archive, a release asset, Git LFS, Zenodo, OSF, Figshare, or another storage service after confirming dataset and institutional requirements.
+
+A checkpoint archive has been prepared outside Git as `CXR_model_checkpoints_v1.0-reviewer-package.zip`; its manifest and SHA256 checksum are tracked in `release_assets/`.
 
 ## Reproducibility
 

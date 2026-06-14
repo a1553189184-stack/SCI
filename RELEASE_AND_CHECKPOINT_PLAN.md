@@ -17,6 +17,22 @@ models_large/hf_large_resnet50/best_resnet50.pt
 models_large/hf_large_efficientnet_b0/best_efficientnet_b0.pt
 ```
 
+## Prepared Checkpoint Archive
+
+The checkpoint archive has been prepared outside Git:
+
+```text
+<DESKTOP>/CXR_model_checkpoints_v1.0-reviewer-package.zip
+```
+
+Archive metadata are tracked in:
+
+```text
+release_assets/RELEASE_ASSET_MANIFEST_v1.0-reviewer-package.csv
+release_assets/CHECKPOINT_MANIFEST_v1.0-reviewer-package.csv
+release_assets/SHA256SUMS_checkpoints_v1.0-reviewer-package.txt
+```
+
 ## Recommended Checkpoint Distribution Route
 
 1. Confirm dataset and institutional requirements allow sharing trained weights.
@@ -58,10 +74,10 @@ Recommended release notes:
 This release contains the code, configuration files, derived metadata, split files, prediction CSVs, metric tables, manuscript-ready figures, training logs, package-version records, and final submission-oriented documents for the selected-public-subset NIH ChestX-ray14 to VinDr-CXR validation study. Raw images and model checkpoints are not included in the Git tree. Raw images should be obtained from the original dataset providers. Checkpoint files may be added as release assets after confirming dataset and institutional requirements.
 ```
 
-After GitHub CLI authentication, create the release page with:
+After GitHub CLI authentication, create the release page and upload the checkpoint archive with:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\CREATE_GITHUB_RELEASE_AFTER_LOGIN.ps1
+powershell -ExecutionPolicy Bypass -File .\CREATE_REVIEWER_RELEASE_WITH_ASSETS.ps1 -CheckpointZip <PATH_TO_CHECKPOINT_ZIP>
 ```
 
 ## DOI Plan
@@ -74,3 +90,5 @@ Checkpoint DOI or release asset URL: pending
 ```
 
 Do not invent a DOI in the manuscript. Use `pending` until the archive record exists and resolves.
+
+See `ZENODO_DOI_INSTRUCTIONS.md` and `ZENODO_METADATA_TEMPLATE.json` for the DOI deposition workflow.
