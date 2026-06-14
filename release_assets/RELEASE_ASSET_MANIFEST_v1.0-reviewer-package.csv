@@ -1,3 +1,3 @@
-﻿"asset_name","local_path","size_bytes","size_mb","sha256","intended_destination"
-"CXR_reviewer_source_package_v1.0-reviewer-package.zip","<DESKTOP>/CXR_reviewer_source_package_v1.0-reviewer-package.zip","16060497","15.32","67566c241e283371d84c9d1e0c41bd0e9e3ef41fa722e7905e15de2da044a42d","GitHub Release asset optional and Zenodo/OSF/Figshare DOI-linked record"
-"CXR_model_checkpoints_v1.0-reviewer-package.zip","<DESKTOP>/CXR_model_checkpoints_v1.0-reviewer-package.zip","380580909","362.95","7e727d52d73ce8ac1e5172934e265726d6b4c0c11df22db75c35e9af6cf51a8b","GitHub Release asset and/or Zenodo/OSF/Figshare DOI-linked record"
+﻿asset_name,local_path,size_bytes,size_mb,sha256,intended_destination
+CXR_reviewer_source_package_v1.0-reviewer-package.zip,<DESKTOP>/CXR_reviewer_source_package_v1.0-reviewer-package.zip,15868607,15.13,b9eb6019a436d7cd8436672c4a2a55021c463af9d9dceee03a1eb785494cf54f,GitHub Release asset optional and Zenodo/source archive
+CXR_model_checkpoints_v1.0-reviewer-package.zip,<DESKTOP>/CXR_model_checkpoints_v1.0-reviewer-package.zip,380580909,362.95,7e727d52d73ce8ac1e5172934e265726d6b4c0c11df22db75c35e9af6cf51a8b,GitHub Release asset and/or Zenodo/OSF large file archive
