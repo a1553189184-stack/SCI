@@ -69,6 +69,8 @@ Edema and Pneumonia had zero positive cases in the selected external subset and 
 - `RELEASE_AND_CHECKPOINT_PLAN.md`: describes the checkpoint and DOI/release plan.
 - `ZENODO_DOI_INSTRUCTIONS.md`: describes the Zenodo DOI workflow.
 - `ZENODO_METADATA_TEMPLATE.json`: provides metadata fields for a DOI-linked record.
+- `.zenodo.json`: provides release metadata for Zenodo's GitHub integration.
+- `CITATION.cff`: provides a GitHub citation metadata file.
 - `release_assets/`: contains checkpoint archive manifests and SHA256 checksums.
 - `REPOSITORY_FILE_MANIFEST.csv`: lists repository files and sizes.
 

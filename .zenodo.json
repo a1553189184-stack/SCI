@@ -1,0 +1,31 @@
+{
+  "title": "Reviewer package for public-subset cross-dataset validation and calibration transfer of chest radiograph classification models",
+  "upload_type": "software",
+  "description": "Code, configuration files, derived metadata, patient-level split files, prediction CSVs, metric tables, manuscript-ready figures, package-version records, training logs, and model checkpoint release assets for a selected-public-subset NIH ChestX-ray14 to VinDr-CXR validation study. Raw NIH ChestX-ray14 and VinDr-CXR images are not redistributed and must be obtained from the original dataset providers.",
+  "creators": [
+    {
+      "name": "a1553189184-stack"
+    }
+  ],
+  "keywords": [
+    "chest radiography",
+    "deep learning",
+    "external validation",
+    "calibration",
+    "explainability",
+    "NIH ChestX-ray14",
+    "VinDr-CXR",
+    "PyTorch"
+  ],
+  "version": "v1.0-reviewer-package",
+  "license": "other-open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/a1553189184-stack/SCI",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Before final publication, replace the GitHub-account creator metadata with the final author list if required by the target journal or repository policy. This record does not redistribute raw third-party chest radiograph images."
+}
+

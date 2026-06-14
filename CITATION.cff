@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reviewer package, please cite the archived release DOI when available."
+title: "Reviewer package for public-subset cross-dataset validation and calibration transfer of chest radiograph classification models"
+version: "v1.0-reviewer-package"
+type: software
+authors:
+  - name: "a1553189184-stack"
+repository-code: "https://github.com/a1553189184-stack/SCI"
+url: "https://github.com/a1553189184-stack/SCI/releases/tag/v1.0-reviewer-package"
+keywords:
+  - chest radiography
+  - deep learning
+  - external validation
+  - calibration
+  - explainability
+  - PyTorch
+abstract: "Code, configuration files, derived metadata, patient-level split files, prediction CSVs, metric tables, manuscript-ready figures, package-version records, training logs, and model checkpoint release assets for a selected-public-subset NIH ChestX-ray14 to VinDr-CXR validation study."
+license: "LicenseRef-Other-Open"
+
